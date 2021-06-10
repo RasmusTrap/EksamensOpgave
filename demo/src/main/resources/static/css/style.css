@@ -1,0 +1,35 @@
+.sognDiv, .kommune{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 800px;
+}
+
+.sognElement, .kommuneElement{
+    width: 300px;
+    max-width: 300px;
+    height: 250px;
+    max-height: 250px;
+    text-align: center;
+    border: 1px solid black;
+
+}
+
+
+
+.sognForm{
+    max-width: 300px;
+    justify-content: center;
+    margin: 0 auto 100px auto;
+
+}
+
+.kommuneKnap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+
+}

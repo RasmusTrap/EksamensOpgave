@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+</head>
+<body>
+<div class="knapDiv">
+<button class="kommuneKnap" id="kommuneKnap" onclick="kommuneKnap()">Se Kommuner</button>
+</div>
+
+    <div class="sognForm" id="sognForm">
+
+                <label>Navn</label>
+                <input class="form-control" type="text" id="navn" required="required"/>
+
+                <label>Sogne Kode</label>
+                <input class="form-control" type="text" id="sognekode" required/>
+
+                <label>Kommune</label>
+                <input class="form-control" type="text" id="kommune" required/>
+
+                <label>Smittetryk</label>
+                <input class="form-control" type="text" id="smittetryk" required/>
+
+                <label>Skal sognet lukkes? Check checkboksen og vælg en dato</label>
+                <input class="form-control" type="checkbox" id="checkbox">
+                <input class="form-control" type="date" id="nedlukning" required/>
+
+            <button class="btn btn-primary opretSogn" id="createSognBtn" onclick="createSogn()">Opret Sogn</button>
+
+    </div>
+
+
+<div class="container sognDiv" id="outerSogn">
+    <div class="innerDiv" id="sognID"></div>
+</div>
+
+</body>
+<script type="text/javascript" src="javascript/script.js"></script>
+</html>

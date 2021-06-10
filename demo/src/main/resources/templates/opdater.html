@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+
+</head>
+<body>
+<div class="sognForm" id="sognForm">
+
+    <label>Navn</label>
+    <input class="form-control" type="text" id="navn" required="required"/>
+
+    <label>Sogne Kode</label>
+    <input class="form-control" type="text" id="sognekode" required/>
+
+    <label>Kommune</label>
+    <input class="form-control" type="text" id="kommune" required/>
+
+    <label>Smittetryk</label>
+    <input class="form-control" type="text" id="smittetryk" required/>
+
+    <input class="form-control" type="checkbox" id="checkbox">
+
+    <label>Start På nedlukning</label>
+    <input class="form-control" type="date" id="nedlukning" required/>
+
+    <button class="btn btn-primary opdaterSogn" id="opdaterSognBtn" onclick="opdater()">Opdater Sogn</button>
+
+</div>
+</body>
+<script type="text/javascript" src="javascript/opdater.js"></script>
+</html>
